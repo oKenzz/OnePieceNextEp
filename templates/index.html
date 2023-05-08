@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>One Piece Next Episode</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
     <div>
-        <!-- {% block content %} -->
-        <h1>{{anime}}</h1>
-        <h2>Episode {{epNum}} will release in: {{days}} Days, {{hours}} Hours, {{min}} Minutes, {{sec}} Seconds</h2>
-        <!-- {% endblock %} -->
+        <!-- <h1>{{anime}}</h1> -->
+        <h1>Episode {{epNum}} will release in:</h1>
+        <h2 id="TimeUntilAiring">{{days}}:{{hours}}:{{min}}:{{sec}}</h2>
+        <h2 id="TimeUnit">DAYS HOURS MINUTES SECONDS</h2>
 
-        <h3 id="content">0</h3>
-        <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
     </div>
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>

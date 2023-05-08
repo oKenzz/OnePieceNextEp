@@ -12,7 +12,7 @@ def getData():
     min, sec = divmod(nextEpRelease, 60)
     hours, min = divmod(min, 60)
     days, hours = divmod(hours, 24)
-    data = {"name": nameOfAnime, "epNum": epNumber, "days": days, "hours": hours, "min": min, "sec": sec}
+    data = {"name": nameOfAnime, "epNum": epNumber, "timeUntilAiring": nextEpRelease, "days": days, "hours": hours, "min": min, "sec": sec}
     return data
 
 @server.route('/')

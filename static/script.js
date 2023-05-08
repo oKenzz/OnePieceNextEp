@@ -2,15 +2,37 @@
 //Fetch data from python flask api through json
 
 
+let epNumber;
+let timeUntilAiring;
+
+const url = "http://127.0.0.1:5500/data"
 // Define the function to update the HTML content
 
-var now = 1
-console.log("Hello World")
 
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    epNumber = data.epNum;
+    timeUntilAiring = data.timeUntilAiring;
+  })
+  .catch(error => {
+    console.error(error);
+  });
+  
 function updateContent() {
-  now += 1
-  document.getElementById("content").innerHTML = now;
+  timeUntilAiring--
+  let min, sec;
+  [min, sec] = [Math.floor(timeUntilAiring / 60), timeUntilAiring % 60];
+  let hours;
+  [hours, min] = [Math.floor(min / 60), min % 60];
+  let days;
+  [days, hours] = [Math.floor(hours / 24), hours % 24];
+
+  const content = `${days}:${hours}:${min}:${sec}`;
+  document.getElementById('TimeUntilAiring').innerHTML = content;
+
 }
+
 
 // Call the function every 1 second
 setInterval(updateContent, 1000);
