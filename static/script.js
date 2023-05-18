@@ -28,7 +28,7 @@ function updateContent() {
   let days;
   [days, hours] = [Math.floor(hours / 24), hours % 24];
 
-  const content = `${days}:${hours}:${min}:${sec}`;
+  const content = `${days}d ${hours}h ${min}m ${sec}s`;
   document.getElementById('TimeUntilAiring').innerHTML = content;
 
 }

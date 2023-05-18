@@ -26,13 +26,14 @@ body {
 
 
 div {
-    max-width: 600px;
+    /* max-width: 600px; */
+    width: fit-content;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.85;
+    /* opacity: 0.85; */
 }
 
 h1 {
@@ -46,11 +47,11 @@ h1 {
 
 
 #TimeUntilAiring {
-    font-size: 120px;
+    font-size: 115px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 0;
-    color: #333;
+    color: #000000;
     text-align: center;
 }
 
@@ -60,4 +61,12 @@ h1 {
     margin-bottom: 0;
     color: #333;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #TimeUntilAiring {
+        font-size: 1px;
+       
+    }
+    
 }
