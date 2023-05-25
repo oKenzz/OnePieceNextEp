@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <div>
+    <div id="DisplayAnimeCountdown">
         <!-- <h1>{{anime}}</h1> -->
-        <h1>Episode {{epNum}} will release in:</h1>
-        <h2 id="TimeUntilAiring">{{days}}d {{hours}}h {{min}}m {{sec}}s</h2>
-
+        <h1 class="episodeChapterText">Episode {{epNum}} will release in:</h1>
+        <h2 class="TimeUntilAiring">{{days}}d {{hours}}h {{min}}m {{sec}}s</h2>
     </div>
     <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
 </body>
