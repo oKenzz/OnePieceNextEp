@@ -59,11 +59,11 @@ body {
   /* Mobile M */
 @media (min-width: 375px) {
   #TimeUntilAiring {
-    font-size: 40px;
+    font-size: 3em;
   }
 
   .episodeChapterText {
-    font-size: 30px;
+    font-size: 1.6em;
   }
 
 }
@@ -72,11 +72,11 @@ body {
   /* Mobile L */
   @media (min-width: 425px) {
     #TimeUntilAiring {
-      font-size: 40px;
+      font-size: 3.5em;
     }
 
     .episodeChapterText {
-      font-size: 30px;
+      font-size: 1.8em;
     }
 
   }
