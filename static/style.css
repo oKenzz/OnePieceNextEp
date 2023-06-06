@@ -94,15 +94,23 @@ body {
   
   /* Laptop */
   @media (min-width: 1024px) {
-    .container {
-      /* Medium-sized desktop-specific styles */
+    #TimeUntilAiring {
+      font-size: 9em;
+    }
+
+    .episodeChapterText {
+      font-size: 4.5em;
     }
   }
   
   /* Laptop L */
   @media (min-width: 1440px) {
-    .container {
-      /* Large desktop-specific styles */
+    #TimeUntilAiring {
+      font-size: 7.5em;
+    }
+
+    .episodeChapterText {
+      font-size: 3em;
     }
   }
   
