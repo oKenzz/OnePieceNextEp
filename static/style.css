@@ -27,10 +27,10 @@ body {
 
 
 #DisplayAnimeCountdown {
-    max-width: 600px;
+    max-width: 95vw;
     width: fit-content;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@ body {
 
 .episodeChapterText {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 1.3em;
     font-weight: 900;
     margin-bottom: 20px;
     color: #2e2e2e;
@@ -47,8 +47,8 @@ body {
 }
 
 
-.TimeUntilAiring {
-    font-size: 115px;
+#TimeUntilAiring {
+    font-size: 2.7em;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 0;
@@ -56,47 +56,47 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    #TimeUntilAiring {
-        font-size: 70px;
-    }
-    
+  /* Mobile M */
+@media (min-width: 375px) {
+  #TimeUntilAiring {
+    font-size: 40px;
+  }
 
-    h1 {
-        font-size: 30px;       
-    }
-    
-    
+  .episodeChapterText {
+    font-size: 30px;
+  }
+
 }
 
-/* Base styles for mobile devices */
-.container {
-    /* Mobile-specific styles */
-  }
-  
-  /* Media query for screens 481px and above (larger screens) */
-  @media (min-width: 481px) {
-    .container {
-      /* Larger screen styles */
+
+  /* Mobile L */
+  @media (min-width: 425px) {
+    #TimeUntilAiring {
+      font-size: 40px;
     }
+
+    .episodeChapterText {
+      font-size: 30px;
+    }
+
   }
   
-  /* Media query for screens 768px and above (tablets and small laptops) */
+  /* Tablet */
   @media (min-width: 768px) {
     .container {
       /* Tablet-specific styles */
     }
   }
   
-  /* Media query for screens 1025px and above (medium-sized laptops and desktops) */
-  @media (min-width: 1025px) {
+  /* Laptop */
+  @media (min-width: 1024px) {
     .container {
       /* Medium-sized desktop-specific styles */
     }
   }
   
-  /* Media query for screens 1441px and above (large desktops and high-resolution screens) */
-  @media (min-width: 1441px) {
+  /* Laptop L */
+  @media (min-width: 1440px) {
     .container {
       /* Large desktop-specific styles */
     }
