@@ -83,8 +83,12 @@ body {
   
   /* Tablet */
   @media (min-width: 768px) {
-    .container {
-      /* Tablet-specific styles */
+    #TimeUntilAiring {
+      font-size: 7.5em;
+    }
+
+    .episodeChapterText {
+      font-size: 3em;
     }
   }
   
