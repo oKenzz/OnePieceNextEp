@@ -12,8 +12,7 @@
 }
 
 body {
-    /* Save on server */
-    background-image: url("https://cdn.shopify.com/s/files/1/0616/3703/4168/files/hur-manga-avsnitt-av-one-piece-finns-det.jpg?v=1655201159"); 
+    background-image: url(images/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -84,7 +83,7 @@ body {
   /* Tablet */
   @media (min-width: 768px) {
     #TimeUntilAiring {
-      font-size: 7.5em;
+      font-size: 7em;
     }
 
     .episodeChapterText {
@@ -106,11 +105,23 @@ body {
   /* Laptop L */
   @media (min-width: 1440px) {
     #TimeUntilAiring {
-      font-size: 7.5em;
+      font-size: 10em;
     }
 
     .episodeChapterText {
-      font-size: 3em;
+      font-size: 4em;
     }
   }
+
+   /* Laptop L */
+   @media (min-width: 2560px) {
+    #TimeUntilAiring {
+      font-size: 15em;
+    }
+
+    .episodeChapterText {
+      font-size: 6em;
+    }
+  }
+  
   

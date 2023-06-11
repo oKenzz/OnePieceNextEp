@@ -1,7 +1,7 @@
 from flask import Flask
 from server import server
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 app.register_blueprint(server, url_prefix="/")
 
 if __name__ == "__main__":
