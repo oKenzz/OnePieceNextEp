@@ -38,7 +38,7 @@ body {
 
 .episodeChapterText {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 900;
     margin-bottom: 20px;
     color: #2e2e2e;
@@ -47,7 +47,7 @@ body {
 
 
 #TimeUntilAiring {
-    font-size: 2.7em;
+    font-size: 2.5em;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 0;
@@ -58,11 +58,11 @@ body {
   /* Mobile M */
 @media (min-width: 375px) {
   #TimeUntilAiring {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .episodeChapterText {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
 }
@@ -71,11 +71,11 @@ body {
   /* Mobile L */
   @media (min-width: 425px) {
     #TimeUntilAiring {
-      font-size: 3.5em;
+      font-size: 3em;
     }
 
     .episodeChapterText {
-      font-size: 1.8em;
+      font-size: 1.7em;
     }
 
   }
@@ -83,7 +83,7 @@ body {
   /* Tablet */
   @media (min-width: 768px) {
     #TimeUntilAiring {
-      font-size: 7em;
+      font-size: 5em;
     }
 
     .episodeChapterText {
@@ -94,11 +94,11 @@ body {
   /* Laptop */
   @media (min-width: 1024px) {
     #TimeUntilAiring {
-      font-size: 9em;
+      font-size: 7.5em;
     }
 
     .episodeChapterText {
-      font-size: 4.5em;
+      font-size: 3em;
     }
   }
   
